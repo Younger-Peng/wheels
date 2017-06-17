@@ -1,0 +1,24 @@
+{
+  "name": "wheels",
+  "version": "1.0.0",
+  "description": "learn to create wheels from frankfang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pc": "proxychains4 -f ~/.proxychains.conf",
+    "gp": "npm run pc git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Younger-Peng/wheels.git"
+  },
+  "keywords": [
+    "wheels"
+  ],
+  "author": "younger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Younger-Peng/wheels/issues"
+  },
+  "homepage": "https://github.com/Younger-Peng/wheels#readme"
+}
