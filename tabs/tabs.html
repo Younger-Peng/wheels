@@ -67,6 +67,23 @@
       display: none;
       min-height: 5em;
     }
+    .tabs ol:nth-child(2)>li.active{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #DFDCD3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: #333;
+      margin: 5em 0;
+    }
   </style>
   <title>Tabs</title>
 </head>
@@ -95,7 +112,7 @@
   <script src="../lib/tabs/index.js"></script>
   <script>
     new Tabs({
-      element: tabs
+      element: document.querySelectorAll('.tabs')[0]
     })
   </script>
 </body>
