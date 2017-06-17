@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style> 
+    #tabs {
+      max-width: 600px;
+      margin: 50px auto;
+      min-height: 400px;
+      background: #eee;
+    }
+    #tabs ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    #tabs ol:first-child>li {
+      border: 1px solid;
+      flex: 1;
+      text-align: center;
+      cursor: pointer;
+    }
+    #tabs ol:first-child>li.active {
+      background: yellow;
+    }
+    #tabs ol:nth-child(2) > li {
+      display: none;
+      min-height: 5em;
+    }
+    #tabs ol:nth-child(2)>li.active {
+      display: block;
+    }
+  </style>
+  <title>Tabs</title>
+</head>
+<body>
+  <div id="tabs">
+    <ol data-role="tabs-nav">
+      <li>tab 1</li>
+      <li>tab 2</li>
+      <li>tab 3</li>
+    </ol>
+    <ol data-role="tabs-panes">
+      <li>内容 1</li>
+      <li>内容 2</li>
+      <li>内容 3</li>
+    </ol>
+  </div>
+  <script src="../lib/dom/index.js"></script>
+  <script src="../lib/tabs/index.js"></script>
+  <script>
+    // new Tabs({
+    //   element: tabs
+    // })
+  </script>
+</body>
+</html>
