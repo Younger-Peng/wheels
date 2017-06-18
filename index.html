@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-    body {
-      text-align: center;
-    }
+    
+
     ol{
       list-style: none;
       padding: 0;
@@ -15,24 +14,38 @@
     a{
       text-decoration: none;
     }
+    *{
+      box-sizing: border-box;
+    }
+    .page{
+      width: 42em;
+      margin: 2em;
+      border: 1px solid #ddd;
+      padding: 0 1em;
+      box-shadow: 3px 3px 6px hsla(0,0%,0%,0.1);
+    }
   </style>
   <title>Index</title>
 </head>
 <body>
-  <h1>
-    用原生JS造轮子
-  </h1>
-  <ol>
-    <li>
-      <a href="./tabs/tabs.html">
-        Tabs组件
-      </a>
-    </li>
-    <li>
-      <a href="./lib/dom/index.js">
-        DOM 工具库
-      </a>
-    </li>
-  </ol>
+  <div class="page">
+    <h1>
+      用原生JS造轮子
+    </h1>
+    <p>不用任何框架、预编译、用最笨的方法早轮子</p>
+    <p>所有代码开源、方便阅读</p>
+    <ol>
+      <li>
+        <a href="./tabs/tabs.html">
+          Tabs组件
+        </a>
+      </li>
+      <li>
+        <a href="./lib/dom/index.js">
+          DOM 工具库(不断更新中)
+        </a>
+      </li>
+    </ol>
+  </div>
 </body>
 </html>
